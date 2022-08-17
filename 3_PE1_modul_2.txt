@@ -1,0 +1,139 @@
+
+---------------------------------------------------------------------------------------------------------------
+MODÜL KAZANIMLARI
+
+     Basit Python programlarının nasıl yazılacağı ve çalıştırılacağı.
+     Python değişmezleri, operatörleri ve ifadelerinin ne olduğu.
+     Değişkenler nelerdir ve onları yöneten kurallar nelerdir?
+     Temel giriş (input) ve çıkış (output) işlemlerinin nasıl yapılacağı.
+
+--------------------------------------------------------------------------------------------------------------
+PYTHON İFADELERİ
+
+     Veriler ve operatörler birbirine bağlandığında ifadeler (expressions) oluşturur. En basit ifade, bir değişmezin (literal) kendisidir.
+
+     literals = anlamı kesin olan değerler
+
+     floating-point(float) = kesirli sayılar (2.1,0.2,1.0)
+
+     boolean = True/False
+
+     string = karakter
+
+     int = tam sayı
+
+-------------------------------------------------------------------------------------------------------------
+
+İŞLEMLER İLE İLGİLİ NOTLAR
+
+     1. Bir ifade, (expression) değişkenlerin ve operatörlerin birleşmesi sonucu oluşur.
+
+        örn: 2+2
+
+
+     2. Operatörler, değişkenler üzerinde çalışabilen veya matematiksel işlemleri gerçekleştirebilen özel semboller veya anahtar kelimelerdir.
+
+
+     3. Python'daki aritmetik operatörler:
+
+         + (toplama)
+
+         - (çıkarma)
+
+         * (çarpma)
+
+         / (klasik bölme-->Sonuç her zaman 'float'dır. Yani kesirli sayi değeri (rasyonel). örn: 4/2=2.0)
+
+         % (modül --> soldaki sayının sağdaki sayıya bölümünden kalanı verir. örn. 7%4=3),
+
+         ** (üs alma --> Üs alma sağdan , 2 ** 3 = 2 * 2 * 2 = 8),
+
+         // (kat / tamsayı bölme - bölmeden en yakın sayıya küçüğe doğru yuvarlanmış değeri döndürür, örn. 3 // 2.0 = 1.0)
+
+
+
+     4. Unary operatörü sadece bir işlenene sahip olan operatördür, sayının negativ mi pozitif mi olduğunu belirler. örn. -15, veya +2.
+
+
+     5. Binary operatörü iki işleneni olan operatördür, örn. 2 + 2 , veya 17 /6.
+
+
+     6.İşlem önceliği:
+
+         unary operatörler (+.-)
+
+         üs alma operatörü (**)
+
+         çarpma ve bölme (/,*)
+
+         en düşük öncelikli olan ise binar çıkarma ve toplamadır. (+.-)
+
+     7. Parantez içine alınmış işlemler her zaman öncelikli hesaplanır
+
+
+     8. Üs alma operatörü, sağ taraflı bağlamayı kullanır. örn:  2 ** 3 ** 2 = 256 
+
+----------------------------------------------------------------------------------------------------------------
+
+DEĞİŞKEN ADI OLARAK KULLANILAMAYAN ÖZELLİKLER
+
+     Harf ile başlamayan isimler
+
+     Boşluk içeren isimler
+
+     Python'da hazır kullanılan özel adlar
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+FONKSİYON TÜRLERİ
+
+     Python'un kendisinden gelen fonksiyonlar:
+
+       'print' fonksiyonu bu türden biridir, bu tür fonksiyonlar Python ile birlikte alınan katma değerlerdir. 
+        Built-in'dir yani kurulum ile birlikte hali hazırla vardır ve yerleşiktir.Kullanmak istiyorsanız özel bir
+        şey yapmanız gerekmez.
+
+     Python'un eklenti (add-on) modülünden gelen fonksiyonlar:
+
+         Modüllerin bazıları Python ile birlikte gelir ancak diğerleri ayrı kurulum gerektirebilir.  Her iki durumda da hepsinin kodunuzla açıkça bağlantılı olması gerekir.
+
+    Kullanıcının kendi yazdığı fonksiyonlar:
+
+         Fonksiyonları kendiniz yazabilir, istediğiniz kadar çok işlevi programınıza yerleştirebilir ve
+         programınızı daha basit ve kolay takip edilebilir bir hale gelirebilirsiniz
+
+--------------------------------------------------------------------------------------------------------------------
+
+FONKSİYONLARIN BİLEŞENLERİ
+
+     bir etki
+
+     etki ile oluşan sonuç
+
+     parametre/parametreler
+
+
+
+FONKSİYONLARIN ÇALIŞMA SİSTEMİ
+
+
+
+     İlk olarak, Python kodda belirtilen fonksiyon adının dahili verilerde bulunup bulunmadığını kontrol eder. Eğer bu arama başarısız olursa, Python kodu iptal eder.Eğer ki varsa verilerden kodu çalıştırır.
+
+
+     İkinci olarak, Python fonksiyonun parametre sayısı gereksinimlerinin fonksiyonu bu şekilde çağırmanıza izin verip vermediğini kontrol eder.Gereksinimler sağlanmazsa kod iptal edilir.
+
+
+     Üçüncü olarak, Python kodunuzu bir anlığına bırakır ve çağırmak istediğiniz fonksiyona atlar.Tabii ki, argümanlarınızı da alır ve bunları da fonksiyona aktarır.
+
+
+     Dördüncüsü; fonksiyon kodunu çalıştırır ve istenen belirtilmiş bir etki varsa o etkiye neden olur, değerlendirilmesi istenen sonuçlar varsa değerlendirir ve görevini bitirir.
+
+
+     Son olarak Python çağrılan fonksiyondan sonraki kodunuza geri döner ve kodlar yürütülmeye devam eder.

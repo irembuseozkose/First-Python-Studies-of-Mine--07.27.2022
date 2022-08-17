@@ -1,0 +1,76 @@
+
+-------------------------------------------------------------------------------------------------------------
+
+MODÜL KAZANIMLARI
+     bilgisayar programlamanın temelleri:
+         bilgisayarın nasıl çalıştığı
+         programın nasıl yürütüldüğü
+         programlama dilinin nasıl tanımlandığı ve yapılandırıldığı
+
+     derleme (compilatiıon) ve yorumlama (interpretation) arasındaki fark
+
+     Python nedir, diğer programlama dilleri arasında nasıl konumlandırılır ve Python'un farklı 
+     sürümlerini ayıran nedir.
+
+--------------------------------------------------------------------------------------------------------------
+
+DİLLER
+
+     Makine Dili:
+         Bilgisayarların kendi dilidir.
+         Bilinen tüm komutların tamamına IL(Talimat Listesi) denir.Makinelerin alfabesidir.
+         İnsanlar tarafından geliştirilmiştir.
+     Doğal Diller:
+         Kendiliğinden oluşan ve gelişen dinamik insan dilleridir.
+     Üst Düzey Programlama Dilleri:
+         Programcılar tarafından yazılmış, doğal dil ile makine dili arasında köprü görevi gören dildir.
+         Bu dilde yazılan programa source code (kaynak kodu) denir.
+         Kaynak kodunun bulunduğu dosyaya source folder (kaynak dosya) denir.
+
+     Bir dili, dil yapan şey nedir?
+        
+         Bir alfabe: 
+             Belirli bir dildeki kelimeleri veya sesleri oluşturmak için kullanılan semboller.
+         bir lexis: (sözlük) 
+             Doğal dillerde oluşugelen ve harflerin bir araya gelmesiyle anlamlı bir bütün oluşturan sözcüklerden 
+             oluşan sözcük bütünü.
+         bir syntax (sözdizimi):
+             Dilde cümle bütünlüğünü sağlayan dil kuralların bütünü.
+         semantics (anlambilim):
+             Dilde kurulan cümlenin anlam ifade etmesi, çelişkilerden uzak olması.
+        
+--------------------------------------------------------------------------------------------------------------
+
+DERLEME VE yorumlama
+     DERLEME (COMPILATION)- 
+         Kaynak program sadece bir kereliğine makine kodunu içeren bir dosyaya çevrilir. Ancak kaynak 
+         kodunu her değiştirdiğinizde bu işlem tekrarlanmalıdır. 
+         Bu dosya dünya çapında dağıtılabilir durumdadır.
+         Bu dönüşümü gerçekleştiren programa derleyici veya çevirmen denir.
+     YORUMLAMA (INTERPRETATION) - 
+         Kaynak program her çalıştırılması gerektiğinde programın kullanıcısı 
+         tarafından makine diline çevirilir. Çünkü kod, her çalıştırılmak istendiğinde yorumlanmaktadır. 
+         Bu aynı zamanda kaynak kodunu olduğu gibi dağıtamayacağınız anlamına gelir.Çünkü son kullanıcının
+         bunu yürütmek için yorumlayıcıya da ihtiyacı vardır.
+
+                         DERLEME                                               YORUMLAMA                                                                                   
+
+         Kodun yürütülmesi daha hızlıdır.                               Kodu tamamlar tamamlamaz çalıştırabilirsiniz.
+                                                                        Ek çeviri aşamaları yoktur.
+         Sadece ilk kullanıcının derleyiciye sahip                       
+  iyi    olması gerekir. Son kullanıcı kodu onsuz                       Kod; makine dili değil, programlama dili 
+  özel-  kullanabilir.                                                  kullanılarak saklanır. Bu, farklı makine 
+   lik                                                                  dilleri kullanan bilgisayarlarda 
+   ler   Çevrilmiş kod makine dili kullanılarak saklanır.               çalıştırılabileceği anlamına gelir.
+         Bunu anlamak çok zor olduğu için özgün fikirleriniz
+         sır olarak kalmaya devam edecektir.
+ 
+  kötü   Derleme süreci uzun zaman alabilir.                            Yorumlama ile çalıştırılan kodlar daha yavaş
+  özel   Kod, yapılan değişikler sonrası hemen                          çalışır.
+  lik    çalıştırılamaz.
+  ler                                                                   İlk ve son kullanıcının her ikisinin de kodu
+         Kodunuzun üzerinde çalışmasını istediğiniz                     çalıştırmak için yorumlayıcıya ihtiyacı vardır.
+         donanım platformları kadar derleyiciye sahip 
+         olmanız gerekir.
+
+------------------------------------------------------------------------------------------------------------------------

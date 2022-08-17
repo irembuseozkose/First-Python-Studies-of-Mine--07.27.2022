@@ -1,0 +1,306 @@
+-----------------------------------------------------------------------------------------------------------
+
+MODÜL KAZANIMLARI
+
+     Boolean veri türü
+
+     İlişkisel operatörler (relational operators)
+
+     Python'da karar verme 
+         if, if-else, if-elif, else
+
+     Döngüler kullanarak kod yürütme nasıl tekrarlanır 
+         while, for
+
+     Python'da mantıksal ve bitsel (bitwise operations) işlemlerin nasıl gerçekleştirileceği
+
+     Python'da listeler 
+         oluşturma
+         dizin oluşturma 
+         dilimleme, içerik işleme
+
+     Bubble-sort algoritmaları kullanarak bir listeyi nasıl sıralayacağınız
+
+
+---------------------------------------------------------------------------------------------------------------
+
+BOOLEAN VERİ TÜRÜ
+
+     Bir bilgisayar yalnızca iki cevap verebilir:
+         Evet, bu doğru.
+         Hayır, bu yanlış
+     Çekimser bir cevap veremez. 
+         Bilmiyorum
+         Olabilir
+     
+
+     True:
+         Doğru demektir ve 1'e eşittir.
+
+     False:
+         Yanlış demektir ve 0'a eşittir.
+
+----------------------------------------------------------------------------------------------------------------
+
+İLİŞKİSEL OPERATÖRLER
+     Eşitlik
+
+         Eşit olma durumu
+             == işareti kullanılır
+             örn: 5==5
+            
+         Eşitsizlik durumu
+             != işareti kullanılır
+             örn: "A"!="a"
+
+     Karşılaştırma
+
+         Büyük olma durumu
+
+             > işareti kullanılır
+             örn: 7>1
+
+         Büyük eşit olma durumu
+             => işareti kullanılır
+             örn:7 => a > 5
+             a 7 ve 6 tam sayı değerlerini alabilir.
+
+         Küçük olma durumu
+             < işareti kullanılır
+             13<121
+
+         Küçük eşit olma durumu
+             =< işareti kullanılır
+             3 =< b =< 4
+             b 3 ve 4 tam sayı değerlerini alabilir
+            
+---------------------------------------------------------------------------------------------------------------
+
+KARAR YAPILARI
+
+if dogru_ya_da_yanlis:
+     bu_satırı_ifade_dogruysa_calistir
+elif dogru_ya_da_yanlis:
+     bu_satiri_ifteki_kosul_yanlissa_ve_elifteki_kosul_dogruysa_calistir
+else:
+     bu_satiri_yukaridaki_verilen_tüm_kosullar_yanlissa_calistir
+
+
+örn:
+
+if karamelli_dondurma_varsa:
+     iki top karamelli dondurma al
+elif: karamelli_dondurma_yoksa_onun_yerine_fistikli_dondurma_varsa:
+     iki top fistikli dondurma al
+else:
+     her_ikisi_de_yoksa_2_top_vanilyali_dondurma_al
+
+
+örn:
+if fistikli_dondurma_varsa:
+     if karamelli_dondurma_varsa:
+         2_top_fistikli_1_top_karamelli_dondurma_al
+    else:
+         3_top_fistikli_dondurma_al
+elif: karamelli_dondurma_varsa:
+     3_top_karamelli_dondurma_al
+else:
+     3_top_vanilyali_dondurma_al
+
+Bilirsiniz vanilya en klasik dondurmadır ve her dondurmacıda bulunur ;)
+
+--------------------------------------------------------------------------------------------------------------
+
+DÖNGÜLER
+
+     While Döngüsü:
+
+         Koşul sağlandığında bir kez döngüye girer ve aksi söylenmediği taktirde döngüden çıkmaz.
+         Sonsuz Döngü:
+             While True:
+                 print("Bu işlem sonsuza kadar sürer.")
+         Counter ile işlemden çıkma:
+             
+             counter=0
+             While counter!=2:
+                 print("devam eder")
+                 counter = counter + 1
+
+
+     For Döngüsü:
+
+         For döngüsü tek elemanlı bir argümanın çok elemanlı bir argüman üzerinden işleme tabi tutulması sağlar.
+
+         for i in range(100):
+             print(i)             ---> 0'dan 99'a kadar yazdırır.
+            
+                 range'e atanan 3. eleman artış miktarını belirler.
+
+     Break:
+
+         Döngüyü durdurur.
+
+     Continue:
+
+         Ardındaki kodları es geçip döngüyü başa sarar.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+MANTIKSAL VE BİTSEL OPERATÖRLER
+
+  Mantıksal Operatörler
+
+     and :
+
+         1 and 0 = 0
+         0 and 1 = 0
+         0 and 0 = 0
+         1 and 1 = 1
+
+     or  :
+
+         1 or 0 = 1
+         0 or 1 = 1
+         1 or 1 = 1
+         0 or 0 = 0
+
+     not :
+
+         not(1)= 0
+         not(0)= 1
+
+
+   Bitsel Operatörler
+
+     & (ampersand) - ve (bitwise conjunction)
+
+         1 and 0 = 0
+         0 and 1 = 0
+         0 and 0 = 0
+         1 and 1 = 1
+
+     | (bar) - veya (bitise disjunction)
+
+         1 or 0 = 1
+         0 or 1 = 1
+         1 or 1 = 1
+         0 or 0 = 0
+
+     ~ (tilde) - bitsel olumsuzluk (bitwise negation)
+
+         not(1)= 0
+         not(0)= 1
+
+     ^ (caret) - ya da bitsel dışlayıcı (xor) (bitwise exclusive).
+
+         1 or 0 = 1
+         0 or 1 = 1
+         1 or 1 = 0
+         0 or 0 = o
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+İKİLİ SOLA KAYDIRMA VE İKİLİ SAĞA KAYDIRMA
+     
+     sayi = 5  (in binary= 101)
+     sayi_sol = sayi<<2 ----> in binary= 1    onluk sistem=1
+     sayi_sağ = sayi>>1 ----> in binary= 1010 onluk sistem=10
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+LİSTELER
+
+     Birden fazla değer taşıyabilen değişkenlerdir.
+     Liste içerisinde farklı türde veriler taşınabilir.
+     Her zaman sıfırdan başlayarak numaralandırılırlar.
+     Listelere sonsuz tane değer atanabilir.
+
+     Listeleri İndexleme:
+         sayilar = [1,2,3,4,5]
+         sayilar adlı listeye 5 tane eleman atadık
+    
+    Liste İçeriğine Erişme:
+         print(sayilar) 
+         diyerek listedeki elemanların tümünü görebiliriz
+
+         print(sayilar[0])
+         listedeki ilk elemanı yazdırır
+
+         print(sayilar[4])
+         listedeki 5. elemanı yazdırır
+
+         print[-1]
+         sonuncu elemanı yazdırır
+
+         len(sayilar) 
+         diyerek listenin içerisinde ne kadar eleman olduğunu görebiliriz.
+
+         number[a]=x diyerek listedeki elemanların değerlerini değiştirebiliriz.
+
+     Listeden Eleman Çıkarma:
+         del sayilar[a]
+         (a+1)'inci elemanı siler
+
+         sayilar[0]=sayilar[1]
+         ikinci elemandaki veriyi birinci elemana kopyalayarak birinci elemandaki veriyi siler
+
+FONKSİYONLAR VE METODLAR
+
+     Metod, özel bir foksiyon türüdür.
+     Bir fonksiyon gibi davranır ve bir fonksiyon gibi görünür. 
+     Ancak davranış şekli ve çağırılma tarzında farklılık gösterir.
+
+     Bir fonskiyon herhangi bir veriye ait değildir. 
+     Veri alır, yeni veriler oluşturabilir ve genellikle bir sonuç üretir.
+     Bir metod tüm bunları yapar ancak seçilen bir varlığın durumunu da değiştirebilir.
+
+     Bir metot, çalıştığı verilere aittir, bir fonksiyon ise tüm koda aittir.
+
+     Fonksiyon çağırma ve Metod çağırma:
+         sonuc = fonksiyon(arg)
+         sonuc = data.metod(arg)
+
+
+     Listeye Öge Ekleme
+         liste.appent(eklemek_istenen_oge)
+             ögeyi listenin sonuna koyar.
+
+         liste.insert(konum , eklemek_istenen_oge) 
+             ögeyi belirtilen index numaralı konuma koyar
+
+         for döngüsü ile listeye eleman ekleme:
+             
+             liste = []
+             for i in range(3):
+                 liste.insert(0, i + 1)
+
+     Bubble-sort algoritmaları:
+
+         liste.sort()
+         listedeki elemanları küçükten büyüğe sıralar
+
+         liste.reverse()
+         listedeki elemanların sıralarını ters çevirir 
+
+     Dilimleme:
+         liste_2 = liste[start:end]
+
+         start başlangıç index numarasını, end bitiş index numarasını gösterir ve bu numaralar arasındaki
+         liste elemanları kopyalanarak yeni bir liste oluşturulur.
+
+         bitiş index nolu elemanı listeye dahil etmez
+
+         start yazılmaz ise 0 index nolu elemandan başlayarak kopyalar.
+
+         end yazılmaz ise len(liste) index nolu eleman baz alınır yani sona kadar olan elemanların hepsi 
+         dahil edilir.
+
+         yani ikisini birden atladığınız durumda listenin bir kopyası oluşturulacaktır.
+
+     in ve not in
+         liste = [5,"a",7,2]
+         print(5 in liste) ---> True
+         print("a" in liste) ---> True
+         print("A" in liste) ---> False
+           
